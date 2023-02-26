@@ -1,6 +1,6 @@
-# html-css 공부
+# ✏html-css 공부
 
-## Visual Studio Code : https://code.visualstudio.com/download
+## 🖥Visual Studio Code : https://code.visualstudio.com/download
 
 ### ✔단축키
 - Tab: 들여쓰기
