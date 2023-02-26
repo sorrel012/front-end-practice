@@ -22,4 +22,4 @@
 
 ### 확장 기능
 - html preview
-  - Ctrl + Shift + V : 실행 결과를 외부 웹 브라우저가 아닌 VS Code 내부에서 
+  - Ctrl + Shift + V : 실행 결과를 외부 웹 브라우저가 아닌 VS Code 내부에서 확인 가능
