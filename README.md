@@ -35,6 +35,9 @@
 - pull  
   - git pull origin main  
   
+- add
+  - git add -A (작업 내용 모두 추가)
+  
 - commit
   - git commit -m "메시지 내용"
   
