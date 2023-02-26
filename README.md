@@ -2,7 +2,7 @@
 
 ## Visual Studio Code : https://code.visualstudio.com/download
 
-### 단축키
+### ✔단축키
 - Tab: 들여쓰기
 
 - Shift + Tab : 내어쓰기
@@ -15,16 +15,16 @@
 
 - Ctrl + Shift + D : 실행
 
-### 기본 설정
+### ✔기본 설정
 - word wrap : 자동 줄바꿈
 
 - font size : 글꼴 크기
 
-### 확장 기능
+### ✔확장 기능
 - html preview
   - Ctrl + Shift + V : 실행 결과를 외부 웹 브라우저가 아닌 VS Code 내부에서 확인 가능
   
-### git
+### ✔GIT
 ![image](https://user-images.githubusercontent.com/115568532/221412780-67cd474b-fb6a-442c-b283-84f788e05fc2.png)
 - remote
   - git remote add origin https://github.com/sorrel012/html-css-practice
