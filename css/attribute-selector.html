@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>css</title>
+	<style media="screen">
+        p[class~="color"] { font-style: italic; }
+        p[class^="color"] { color: brown; }
+        p[class$="color"] { color: rgb(57, 0, 242); }
+        p[class*="color"] { color: black; }
+	</style>
+</head>
+<body>    
+    <p class="color hot">red</p>
+    <p class="cool color">blue</p>
+    <p class="colorful nature">rainbow</p>
+</body>
+</html>     
