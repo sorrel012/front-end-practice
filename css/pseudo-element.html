@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>css</title>
+        <style media="screen">
+            p::before {
+                color: rgb(255, 0, 68);
+                content: "before 가상 요소"
+            }
+
+            p::after {
+                color: rgb(68, 0, 255);
+                content: "after 가상 요소"
+            }
+
+            p::first-line {                
+                font-style: italic;
+            }
+
+            p::first-letter {
+                font-size: 3em;
+            }
+
+        </style>
+    </head> 
+    <body>   
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, itaque. Ut porro, natus optio quidem molestiae blanditiis consectetur et cumque ex temporibus architecto non veniam itaque expedita quae laboriosam est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque asperiores officia expedita explicabo odio fugit eum magni veritatis deserunt. Minima itaque similique tempora adipisci, reprehenderit voluptate officia iusto nisi harum?</p>
+    </body>
+</html>     
