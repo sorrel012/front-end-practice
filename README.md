@@ -1,4 +1,4 @@
-# ✏html-css 공부
+# ✏html-css + Javascript 공부
 
 <br/>
 
@@ -38,7 +38,7 @@
 ### ✔GIT
 ![image](https://user-images.githubusercontent.com/115568532/221412780-67cd474b-fb6a-442c-b283-84f788e05fc2.png)
 - remote
-  - git remote add origin https://github.com/sorrel012/html-css-practice
+  - git remote add origin https://github.com/sorrel012/front-end-practice
 
 - remote 확인
   - git remote -v
