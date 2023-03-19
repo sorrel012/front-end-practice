@@ -3,47 +3,52 @@
     <head>
         <meta charset="utf-8">
         <title>WEB1</title>
+        <script>
+            function linksSetColor(color) {
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length) {
+                    alist[i].style.color = color;
+                    i++;
+                }  
+            }
+            function bodySetColor(color) {
+                document.querySelector('body').style.color = color;
+            }
+            function bodySetBackgroundColor(color) {
+                document.querySelector('body').style.backgroundColor = color;
+            }
+            function nightDayHandler(self){
+                if(self.value === 'night') {
+                    bodySetBackgroundColor('black');
+                    bodySetColor('white');
+                    self.value = 'day'
+
+                    linksSetColor('powderblue');
+                           
+                } else {
+                    bodySetBackgroundColor('white');
+                    bodySetColor('black');
+                    self.value = 'night'
+
+                    linksSetColor('blue');
+                }
+            }
+        </script>
     </head>
     <body>
         <h1><a href="index.html">WEB</a></h1>
         <input id="night_day" type="button" value="night" onclick="
-            var target =  document.querySelector('body')
-            if(this.value === 'night') {
-                target.style.backgroundColor='black';
-                target.style.color='white';
-                this.value = 'day'
-
-                var alist = document.querySelectorAll('a');
-                var i = 0;
-                while(i < alist.length) {
-                    alist[i].style.color = 'powderblue';
-                    i++;
-                }
-            
-
-            } else {
-                target.style.backgroundColor='white';
-                target.style.color='black';
-                this.value = 'night'
-
-                var alist = document.querySelectorAll('a');
-                var i = 0;
-                while(i < alist.length) {
-                    alist[i].style.color = 'blue';
-                    i++;
-                }
-            }
+           nightDayHandler(this);
         ">
         <o1>
-
             <li><a href="1.html">HTML</a></li>
             <li><a href="2.html">CSS</a></li>
             <li><a href="3.html">JavaScript</a></li>
         </o1>
-
         <h2>JavaScript</h2>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A met error illum, assumenda odit accusamus voluptate reiciendis quisquam, distinctio a pariatur similique? Reiciendis earum assumenda veniam facere, ex debitis cumque consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam hic, quo voluptatum laborum consequatur eius quas! Earum saepe asperiores impedit voluptatum eaque incidunt cupiditate quos vitae itaque. Tempore, numquam facilis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ratione doloribus error, officia facere impedit sed atque quidem, accusamus deserunt quis recusandae reiciendis id illo repudiandae dicta est. Reiciendis, fuga?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo assumenda corrupti ratione beatae libero, nostrum omnis odit cumque explicabo repellendus. Quas placeat aperiam facilis sunt cumque, in quisquam ratione et.        </p>
-
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A met error illum, assumenda odit accusamus voluptate reiciendis quisquam, distinctio a pariatur similique? Reiciendis earum assumenda veniam facere, ex debitis cumque consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam hic, quo voluptatum laborum consequatur eius quas! Earum saepe asperiores impedit voluptatum eaque incidunt cupiditate quos vitae itaque. Tempore, numquam facilis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ratione doloribus error, officia facere impedit sed atque quidem, accusamus deserunt quis recusandae reiciendis id illo repudiandae dicta est. Reiciendis, fuga?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo assumenda corrupti ratione beatae libero, nostrum omnis odit cumque explicabo repellendus. Quas placeat aperiam facilis sunt cumque, in quisquam ratione et.        
+        </p>
     </body>
 </html>
