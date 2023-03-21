@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WEB1</title>
+        <script>
+            var Body = {
+                setColor:function (color) {
+                    document.querySelector('body').style.color = color;
+                },
+                setBackgroundColor:function (color) {
+                    document.querySelector('body').style.backgroundColor = color;
+                }
+            }
+            var Links = {
+                setColor:function (color) {
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < alist.length) {
+                        alist[i].style.color = color;
+                        i++;
+                    }  
+                }
+            }
+            function nightDayHandler(self){
+                if(self.value === 'night') {
+                    Body.setBackgroundColor('black');
+                    Body.setColor('white');
+                    self.value = 'day'
+
+                    Links.setColor('powderblue');
+                           
+                } else {
+                    Body.setBackgroundColor('white');
+                    Body.setColor('black');
+                    self.value = 'night'
+
+                    Links.setColor('blue');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1><a href="index.html">WEB</a></h1>
+        <input id="night_day" type="button" value="night" onclick="
+           nightDayHandler(this);
+        ">
+        <o1>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </o1>
+        <h2>WEB</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit exercitationem soluta aperiam, quisquam alias provident temporibus ut odio modi corporis fugit aliquam laboriosam, suscipit nostrum! Eligendi repellat inventore neque excepturi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga dolorem optio inventore velit illum exercitationem sint. Corrupti commodi, libero laudantium tempore obcaecati ipsum excepturi fuga similique nisi illo laboriosam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas tempore dolores voluptate eligendi minus ratione eaque, dolorum dicta, excepturi aut distinctio obcaecati facilis reprehenderit dolore neque culpa, dolor quasi?
+        </p>
+    </body>
+</html>

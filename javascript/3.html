@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB1 - JavaScript</title>
+        <meta charset="utf-8">
+        <script>
+            var Body = {
+                setColor:function (color) {
+                    document.querySelector('body').style.color = color;
+                },
+                setBackgroundColor:function (color) {
+                    document.querySelector('body').style.backgroundColor = color;
+                }
+            }
+            var Links = {
+                setColor:function (color) {
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < alist.length) {
+                        alist[i].style.color = color;
+                        i++;
+                    }  
+                }
+            }
+            function nightDayHandler(self){
+                if(self.value === 'night') {
+                    Body.setBackgroundColor('black');
+                    Body.setColor('white');
+                    self.value = 'day'
+
+                    Links.setColor('powderblue');
+                           
+                } else {
+                    Body.setBackgroundColor('white');
+                    Body.setColor('black');
+                    self.value = 'night'
+
+                    Links.setColor('blue');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1><a href="index.html">WEB</a></h1>
+        <input id="night_day" type="button" value="night" onclick="
+           nightDayHandler(this);
+        ">
+        <o1>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </o1>
+        <h2>JavaScript</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, explicabo! Id beatae perferendis esse fugit consequatur illo, quae quasi eum est labore quidem numquam temporibus dignissimos soluta dolore dolorum asperiores?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate necessitatibus autem totam ipsa modi est quam sint animi minima. Amet aliquam excepturi consectetur iure repellendus veritatis possimus voluptatem iusto assumenda?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo pariatur, sed dignissimos, quas sequi vero porro perspiciatis voluptatibus accusantium placeat ex praesentium maiores vitae voluptate iure ratione debitis consequuntur labore.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi distinctio consequatur amet quos voluptate eligendi aliquid! Nisi cupiditate, quae voluptas animi fuga quasi sapiente veniam ut minima recusandae vero aliquam!
+        </p>
+    </body>
+</html>
