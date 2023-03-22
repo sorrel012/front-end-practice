@@ -54,4 +54,10 @@
   
 - push
   - git push origin main
-  
+
+<br>
+
+### ✔ Node js 에서 JavaScript 사용하기
+![image](https://user-images.githubusercontent.com/115568532/226937186-a55a4c9d-b155-4495-a968-c93e8125afdb.png)
+- 파일은 console.log('') 로 작성
+- 터미널에서 node + 파일명 입력
