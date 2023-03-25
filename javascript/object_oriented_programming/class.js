@@ -4,11 +4,15 @@ class Person {
         this.first = first;
         this.second = second;
     }
+
+    sum() {
+        return 'class: ' + (this.first+ this.second)
+    }
 }
 
-Person.prototype.sum = function() {
-    return 'prototype: ' + (this.first+ this.second)
-}
+// Person.prototype.sum = function() {
+//     return 'prototype: ' + (this.first+ this.second)
+// }
 
 var hanee = new Person('hanee', 10, 20);
 console.log('hanee', hanee);
