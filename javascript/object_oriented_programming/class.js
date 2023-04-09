@@ -5,31 +5,26 @@ class Person {
         this.second = second;
     }
     sum() {
-        return 'class: ' + (this.first+ this.second)
+        return (this.first + this.second)
     }
 }
 
-class PersonPlus{
-    constructor(name, first, second){
-        this.name = name;
-        this.first = first;
-        this.second = second;
+class PersonPlus extends Person {
+    constructor(name, first, second, third) {
+        super(name, first, second);
+        this.third = third;
     }
     sum() {
-        return 'class: ' + (this.first+ this.second)
+        return super.sum() + this.third;
     }
     avg() {
-        return (this.first+this.second)/2;
+        return (this.first + this.second + this.third)/3;
     }
 }
 
-// Person.prototype.sum = function() {
-//     return 'prototype: ' + (this.first+ this.second)
-// }
-
-var hanee = new Person('hanee', 10, 20);
+var hanee = new PersonPlus('hanee', 10, 20, 30);
 console.log('hanee', hanee);
 console.log('hanee.sum()', hanee.sum());
-console.log('hanee.sum()', hanee.avg());
+console.log('hanee.avg()', hanee.avg());
 
 console.log();
