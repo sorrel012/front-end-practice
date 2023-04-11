@@ -20,6 +20,8 @@
 
 - Ctrl + Shift + D : 실행
 
+- Alt + Shift + 방향키 : 라인 복사
+
 <br/>
 
 ### ✔기본 설정
