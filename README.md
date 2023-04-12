@@ -34,6 +34,9 @@
 ### ✔확장 기능
 - html preview
   - Ctrl + Shift + V : 실행 결과를 외부 웹 브라우저가 아닌 VS Code 내부에서 확인 가능
+
+- live server
+  - Ctrl + F11(직접 설정) : 실시간으로 변화 확인 가능
   
 <br/>
 
