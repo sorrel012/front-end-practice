@@ -27,10 +27,17 @@
             //console.log(this.name);
             //console.log(this.name == '');
             
-            const innerFunc = function() {
+            // const innerFunc = function() {
+            //     //console.log('inner', this.name);
+            //     console.log('inner',this);
+            // }
+
+            const innerFunc = () => {
                 //console.log('inner', this.name);
-                console.log('inner',this);
+                console.log('inner', this);
             }
+
+
             innerFunc();
         },
     };
