@@ -28,7 +28,7 @@
     </p>
     <p>
       <label for="age">Enter your Age: </label>
-      <input type="number" placeholder="age" name="age">
+      <input type="number" placeholder="age" name="age" min="20" max="30">
     </p>
   </form>
 
@@ -73,7 +73,12 @@
       <option value="steak">Steak</option>
     </select>
 
-    <div>
+    <h3>Range</h3>
+    <label for="cheese">Amount of Cheese!</label>
+    <input type="range" name="cheese" id="cheese" min="0" max="50" step="5" value="20">
+
+
+    <div style="margin-top: 20px;">
       <button>Submit</button>
     </div>
   </form>
