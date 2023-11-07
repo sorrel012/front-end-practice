@@ -34,3 +34,7 @@ span {
   margin-left: 5px;
   border-radius: 10%;
 }
+
+span a {
+  color: #457b9d;
+}
