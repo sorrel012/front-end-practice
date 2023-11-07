@@ -1,11 +1,11 @@
 h2 {
- color: teal; 
- background-color: plum;
+ color: rgb(98, 151, 0); 
+ background-color: papayawhip;
 }
 
 button {
-  color: magenta;
-  background-color: cyan;
+  color: #ffdef5;
+  background-color: #000000;
 }
 
 p {
