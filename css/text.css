@@ -1,0 +1,34 @@
+@import url("https://font.elice.io/css?family=Elice+DX+Neolli");
+@font-face {
+  font-family: 'JeonjuCraftGoR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/JeonjuCraftGoR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal; /*400*/
+  letter-spacing: 10px;
+  font-size: 30px;
+  font-family: Elice DX Neolli, sans-serif
+}
+
+h2 {  
+  font-family: Elice DX Neolli, sans-serif
+}
+
+h3 {
+  text-decoration: red underline wavy;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+
+  font-family: JeonjuCraftGoR, sans-serif;
+}
+
