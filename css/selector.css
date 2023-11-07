@@ -1,0 +1,36 @@
+/* * {
+  background-color: rgb(255, 235, 239);
+} */
+
+body {
+  background-color: #f1faee;
+}
+
+button {
+  font-size: 20px;
+}
+
+h1, h2 {
+  color: #1d3557;
+}
+
+button {
+  background-color: #a8dadc;
+}
+
+#signup {
+  background-color: #1d3557;
+  color: #f1faee;
+}
+
+span {
+  color: #457b9d;
+}
+
+.tag {
+  background-color: #e63496;
+  color: #f1faee;
+  font-size: 16px;
+  margin-left: 5px;
+  border-radius: 10%;
+}
