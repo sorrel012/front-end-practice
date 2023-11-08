@@ -63,7 +63,7 @@ a[href*="google"] {
   color: blue;
 }
 
-button:hover {
+.post button:hover {
   background-color: #e63946;
   color: white;
 }
@@ -90,4 +90,9 @@ p::first-line {
 
 p::selection {
   background-color: #fcbf49;
+} 
+
+button:hover {
+  background-color: olive;
+  font-size: 30px;
 }
