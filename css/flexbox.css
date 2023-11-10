@@ -7,13 +7,13 @@ h1 {
 #container {
     background-color: #003049;
     width: 90%;
-    height: 400px;
+    height: 150px;
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     flex-wrap: wrap;
     /* align-content: center; */
 }
@@ -22,10 +22,12 @@ h1 {
     width: 150px;
     height: 150px;
     text-align: center;
-    font-weight: bold;
-    font-size: 4em;
+    /* font-weight: bold;
+    font-size: 4em; */
+    flex-basis: 220px;
 }
 
+/* 
 div:nth-of-type(3) {
     align-self: center;
-}
+} */
