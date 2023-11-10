@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+img {
+  width: 30%;
+  margin: calc(10%/6);
+}
+
+nav {
+  width: 30%;
+  margin-left: calc(10%/6);
+  text-transform: uppercase;
+  border-bottom: 2px solid #f1f1f1;
+  padding: 0.8em 0;
+  font-family: GmarketSansBold, sans-serif;
+  font-size: 1.5em;
+}
