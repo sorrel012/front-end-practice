@@ -7,13 +7,26 @@
 //  }
 // console.log("AFTER CONDITIONAL");
 
-const dayOfWeek = prompt('ENTER A DAY').toLowerCase();
-if(dayOfWeek === 'monday') {
-  console.log('UGHHH I HATE MONDAYS!');
-} else if (dayOfWeek === 'saturday') {
-  console.log('YAY I LOVE SATURDAYS');
-} else if (dayOfWeek === 'friday') {
-  console.log('FRIDAYS ARE DECENT, ESCEPCIALLY AFTER WORK!');
+// const dayOfWeek = prompt('ENTER A DAY').toLowerCase();
+// if(dayOfWeek === 'monday') {
+//   console.log('UGHHH I HATE MONDAYS!');
+// } else if (dayOfWeek === 'saturday') {
+//   console.log('YAY I LOVE SATURDAYS');
+// } else if (dayOfWeek === 'friday') {
+//   console.log('FRIDAYS ARE DECENT, ESCEPCIALLY AFTER WORK!');
+// } else {
+//   console.log('MEH');
+// }
+
+const password = prompt("please enter a new password");
+
+if(password.length >= 6) {
+  if(password.indexOf(' ') === -1) {
+    console.log('Valid Password!');
+  } else {
+    console.log('Password cannot contain spaces!');
+  }
 } else {
-  console.log('MEH');
+  console.log('PASSWORD TOO SORT! Must be 6+ characters');
 }
+
