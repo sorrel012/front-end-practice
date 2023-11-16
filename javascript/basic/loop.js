@@ -49,6 +49,28 @@ const subreddits = ['cringe', 'books', 'funny'];
 //   console.log(sub);
 // }
 
-for (let char of 'hello word') {
-  console.log(char);
+// for (let char of 'hello word') {
+//   console.log(char);
+// }
+
+const numbers = [1,2,3,4,5,6,7,8,9]; 
+
+// for (let number of numbers) {
+//     console.log(number**2);
+// }
+
+const testScores = {
+  a: 80,
+  b: 70,
+  c: 100
+};
+
+for (let person in testScores) {
+  console.log(`${person} scored ${testScores[person]}`);
+}
+
+const animals = ['rabbit', 'tiger', 'lion'];
+
+for (const animal of animals) {
+  console.log(animal);
 }
