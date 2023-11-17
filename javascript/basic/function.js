@@ -8,8 +8,14 @@ function sing() {
 // sing();
 // sing();
 
-function greet(frstName) {
-  console.log(`FirstName is: ${frstName}`);
+function greet(frstName, lastname) {
+  console.log(`My name is: ${frstName} ${lastname}`);
 }
 
-greet('Hana');
+// greet('Hana', 'Han');
+
+function repeat(str, numTimes) {
+  for(let i = 0; i < numTimes; i++) {
+    console.log(str);
+  }
+}
