@@ -6,7 +6,7 @@ console.log(evenNumbers);
 const movies = [
   {
       title: 'Amadeus',
-      score: 99
+      score: 79
   },
   {
       title: 'Stand By Me',
@@ -14,7 +14,7 @@ const movies = [
   },
   {
       title: 'Parasite',
-      score: 95
+      score: 75
   },
   {
       title: 'Alien',
@@ -23,4 +23,5 @@ const movies = [
 ];
 
 const goodMovies = movies.filter(movie => movie.score > 80);
-console.log(goodMovies);
+const goodTitles = goodMovies.map(movie => movie.title);
+console.log(goodTitles);
