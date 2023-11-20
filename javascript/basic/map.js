@@ -30,3 +30,6 @@ const titles = movies.map(movie => {
 })
 
 console.log(titles);
+
+const newMovies = movies.map(movie => `${movie.title} - ${movie.score / 10}`);
+console.log(newMovies);
