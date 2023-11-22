@@ -53,3 +53,12 @@ document.body.appendChild(newImg);
 const newH3 = document.createElement('h3');
 newH3.innerText = 'I am new!';
 document.body.appendChild(newH3);
+
+// ============== append ==================
+const p = document.querySelector('p');
+p.append('i am new text yaaaaaaaaaaaay!!!', 'newnewenwe');
+
+const newB = document.createElement('b');
+newB.append('Hi!');
+
+p.prepend(newB);
