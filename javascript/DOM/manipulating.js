@@ -15,7 +15,7 @@ console.log(link2);
 
 firstLink.setAttribute('href', 'https://www.google.com');
 
-// CSS
+// CSS - inline
 
 // document.querySelector('h1').style.color = 'pink';
 
@@ -24,3 +24,11 @@ for (let link of allLinks) {
   link.style.textDecoration = 'none';
   link.style.fontWeight = 'bold';
 }
+
+// CSS - class
+document.querySelector('h1').setAttribute('class', 'purple');
+
+const h2 = document.querySelector('h2');
+h2.classList.add('border');
+h2.classList.add('background');
+h2.classList.remove('border');
