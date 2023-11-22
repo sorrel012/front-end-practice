@@ -69,3 +69,10 @@ newH2.append('Are adorable chickens');
 
 const h1 = document.querySelector('h1');
 h1.insertAdjacentElement('afterend', newH2);
+
+// ============== removeChild ==================
+const firstLi = document.querySelector('li');
+firstLi.parentElement.removeChild(firstLi);
+
+const b = document.querySelector('b');
+b.parentElement.removeChild(b);
