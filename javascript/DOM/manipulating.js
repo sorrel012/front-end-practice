@@ -76,3 +76,7 @@ firstLi.parentElement.removeChild(firstLi);
 
 const b = document.querySelector('b');
 b.parentElement.removeChild(b);
+
+// ============== remove ==================
+const img = document.querySelector('img');
+img.remove();
