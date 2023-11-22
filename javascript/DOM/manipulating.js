@@ -62,3 +62,10 @@ const newB = document.createElement('b');
 newB.append('Hi!');
 
 p.prepend(newB);
+
+// ============== adjacent ==================
+const newH2 = document.createElement('h2');
+newH2.append('Are adorable chickens');
+
+const h1 = document.querySelector('h1');
+h1.insertAdjacentElement('afterend', newH2);
