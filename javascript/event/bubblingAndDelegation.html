@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bubbling And Delegation</title>
+
+    <style>
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section onclick="alert('section clicked')">
+      <p onclick="alert('p clicked')">
+        I am a paragraph:
+        <button onclick="alert('button clicked')">Clicked</button>
+      </p>
+    </section>
+
+    <div id="container">
+      Click To Hide
+      <button id="changeColor">Change Color</button>
+    </div>
+
+    <script src="bubblingAndDelegation.js"></script>
+  </body>
+</html>
