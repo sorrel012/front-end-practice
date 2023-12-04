@@ -6,23 +6,35 @@
     <style>
       .tag {
         display: inline-block;
-        background-color: thistle;
-        padding: 16px;
-        margin-top: 16px;
+      //  background-color: thistle;
+      //  padding: 16px;
+      //  margin-top: 16px;
         font-size: 48px;
+      }
+      div {
+        height: 300px;
       }
     </style>
   </head>
   <body>
-    <div class="tag">Window Size</div>
+    <h1 class="tag">Window Size</h1>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
     <script>
       const tag = document.querySelector('.tag');
+      const screen = `screenSize: ${window.screen.width}, ${window.screen.height}`;
+      const outerSize = `outerSize: ${window.outerWidth}, ${window.outerHeight}`;
+      const innerSize = `innerSize: ${window.innerWidth}, ${window.innerHeight}`;
+      const clientSize = `clientSize: ${document.documentElement.clientWidth},  ${document.documentElement.clientHeight}`;
       function updateTag() {
-        tag.innerHTML = `
-        window.screen: ${window.screen.width}<br>
-        window.outerWidth: ${window.innerWidth}<br>
-        window.innerWidth: ${window.outerWidth}<br>
-        documentElement.clientWidth: ${document.documentElement.clientWidth}`;
+        // tag.innerHTML = `
+        // window.screen: ${window.screen.width}<br>
+        // window.outerWidth: ${window.innerWidth}<br>
+        // window.innerWidth: ${window.outerWidth}<br>
+        // documentElement.clientWidth: ${document.documentElement.clientWidth}`;
       }
       window.addEventListener('resize', () => {
         updateTag();
