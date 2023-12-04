@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Window Coordinate</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      div {
+        background-color: beige;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+      }
+      .orange {
+        background-color: #fac8b7;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="orange"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <script>
+      const square = document.querySelector('.orange');
+      square.addEventListener('click', (e) => {
+        const rect = square.getBoundingClientRect();
+        console.log('rect', rect);
+        console.log('client: ', e.clientX, e.clientY);
+        console.log('page: ', e.pageX, e.pageY);
+      });
+    </script>
+  </body>
+</html>
