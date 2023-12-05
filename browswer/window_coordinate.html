@@ -4,39 +4,55 @@
     <meta charset="UTF-8" />
     <title>Window Coordinate</title>
     <style>
-      body {
-        background-color: black;
-      }
+      //body {
+      //  background-color: black;
+      //}
       div {
-        background-color: beige;
+        //background-color: beige;
         width: 200px;
         height: 200px;
-        border: 1px solid black;
+        //border: 1px solid black;
       }
       .orange {
         background-color: #fac8b7;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+      aside {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 500px;
       }
     </style>
   </head>
   <body>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div class="orange"></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <aside>
+      <button class="scrollBy">Scroll by</button>
+      <button class="scrollTo">Scroll to</button>
+      <button class="scrollInto">Scroll into</button>
+    </aside>
 
+    <div class="orange"></div>
     <script>
-      const square = document.querySelector('.orange');
-      square.addEventListener('click', (e) => {
-        const rect = square.getBoundingClientRect();
-        console.log('rect', rect);
-        console.log('client: ', e.clientX, e.clientY);
-        console.log('page: ', e.pageX, e.pageY);
+      const circle = document.querySelector('.orange');
+      circle.addEventListener('click', (e) => {
+        console.log(circle.getBoundingClientRect());
+        console.log(`client: ${e.clientX}, ${e.clientY}`);
+        console.log(`page: ${e.pageX}, ${e.pageY}`);
+      });
+
+      const scrollBy = document.querySelector('.scrollBy');
+      const scrollTo = document.querySelector('.scrollTo');
+      const scrollInto = document.querySelector('.scrollInto');
+
+      scrollBy.addEventListener('click', () => {
+        window.scrollBy(0, 50);
+      });
+      scrollTo.addEventListener('click', () => {
+        window.scrollTo(0, 50);
+      });
+      scrollInto.addEventListener('click', () => {
+        circle.scrollIntoView();
       });
     </script>
   </body>
