@@ -7,6 +7,7 @@ addEventListener('load', () => {
   const targetRect = target.getBoundingClientRect();
   const targetHalfWidth = targetRect.width / 2;
   const targetHalfHeight = targetRect.height / 2;
+
   const tagRect = tag.getBoundingClientRect();
   const tagWidth = tagRect.width / 2;
   const tagHeight = tagRect.height / 5;
