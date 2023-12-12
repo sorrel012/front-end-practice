@@ -52,9 +52,11 @@
       });
       button.addEventListener('click', (event) => {
         console.log(`button1 ${event.currentTarget}, ${event.target}`);
+        // event.stopPropagation(); // 가능한 사용 xxx
       });
       button.addEventListener('click', (event) => {
         console.log(`button2 ${event.currentTarget}, ${event.target}`);
+        // event.stopImmediatePropagation(); // 가능한 사용 xxx
       });
     </script>
   </body>
