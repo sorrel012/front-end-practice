@@ -6,8 +6,17 @@ const addBtn = document.querySelector('.footer__button');
 
 function onAdd() {
   const text = input.value;
+  if (text.trim() === '') {
+    input.focus();
+    return;
+  }
+
   const item = createItem(text);
+
   items.appendChild(item);
+
+  item.scrollIntoView({ block: 'center', behavior: 'smooth' });
+
   input.value = '';
   input.focus();
 }
@@ -52,4 +61,10 @@ function createItem(text) {
 
 delBtn.addEventListener('click', () => {
   items.removeChild(itemRow);
+});
+
+input.addEventListener('keypress', (evt) => {
+  if (evt.key === 'Enter') {
+    onAdd();
+  }
 });
