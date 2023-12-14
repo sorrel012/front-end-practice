@@ -1,9 +1,14 @@
 const items = document.querySelector('.items');
-const itemRow = document.querySelector('.item__row');
-const delBtn = document.querySelector('.item__delete');
+// const itemRow = document.querySelector('.item__row');
+// const delBtn = document.querySelector('.item__delete');
 const input = document.querySelector('.footer__input');
-const addBtn = document.querySelector('.footer__button');
+// const addBtn = document.querySelector('.footer__button');
+const form = document.querySelector('.new-form');
 
+form.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  onAdd();
+});
 function onAdd() {
   const text = input.value;
   if (text.trim() === '') {
@@ -65,25 +70,20 @@ function createItem(text) {
   return itemRow;
 }
 
-addBtn.addEventListener('click', () => {
-  onAdd();
-});
-
-// delBtn.addEventListener('click', () => {
-//   items.removeChild(itemRow);
+// addBtn.addEventListener('click', () => {
+//   onAdd();
 // });
-
-input.addEventListener('keydown', (evt) => {
-  // if (evt.key === 'a') {
-  //   evt.preventDefault();
-  // }
-  if (evt.isComposing) {
-    return;
-  }
-  if (evt.key === 'Enter') {
-    onAdd();
-  }
-});
+// input.addEventListener('keydown', (evt) => {
+//   // if (evt.key === 'a') {
+//   //   evt.preventDefault();
+//   // }
+//   if (evt.isComposing) {
+//     return;
+//   }
+//   if (evt.key === 'Enter') {
+//     onAdd();
+//   }
+// });
 
 items.addEventListener('click', (evt) => {
   const id = evt.target.dataset.id;
@@ -92,3 +92,7 @@ items.addEventListener('click', (evt) => {
     toBeDeleted.remove();
   }
 });
+
+// delBtn.addEventListener('click', () => {
+//   items.removeChild(itemRow);
+// });
