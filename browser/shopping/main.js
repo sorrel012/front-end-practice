@@ -73,7 +73,13 @@ addBtn.addEventListener('click', () => {
 //   items.removeChild(itemRow);
 // });
 
-input.addEventListener('keypress', (evt) => {
+input.addEventListener('keydown', (evt) => {
+  // if (evt.key === 'a') {
+  //   evt.preventDefault();
+  // }
+  if (evt.isComposing) {
+    return;
+  }
   if (evt.key === 'Enter') {
     onAdd();
   }
