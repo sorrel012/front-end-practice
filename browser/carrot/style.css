@@ -99,3 +99,7 @@ button {
   display: block;
   font-size: 38px;
 }
+
+.carrot {
+  cursor: pointer;
+}
