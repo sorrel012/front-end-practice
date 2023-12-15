@@ -8,9 +8,9 @@ const popUpMsg = document.querySelector('.pop-up__message');
 const popUpRefresh = document.querySelector('.pop-up__refresh');
 
 const CARROT_SIZE = 80;
-const CARROT_COUNT = 5;
-const BUG_COUNT = 5;
-const GAME_DURATION_SEC = 5;
+const CARROT_COUNT = 10;
+const BUG_COUNT = 10;
+const GAME_DURATION_SEC = 10;
 
 const carrotSound = new Audio('sound/carrot_pull.mp3');
 const alertSound = new Audio('sound/alert.wav');
@@ -71,6 +71,7 @@ function showStopButton() {
   const icon = gameBtn.querySelector('.fas');
   icon.classList.add('fa-stop');
   icon.classList.remove('fa-play');
+  gameBtn.style.visibility = 'visible';
 }
 
 function hideGameButton() {
