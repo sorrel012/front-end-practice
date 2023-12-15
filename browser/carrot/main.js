@@ -1,8 +1,10 @@
 const field = document.querySelector('.game__field');
 const fieldRect = field.getBoundingClientRect();
-const startBtn = document.querySelector('.game__button');
+const gameBtn = document.querySelector('.game__button');
 const gameTimer = document.querySelector('.game__timer');
 const gameScore = document.querySelector('.game__score');
+const popUp = document.querySelector('.pop-up');
+const popUpMsg = document.querySelector('.pop-up__message');
 
 const CARROT_SIZE = 80;
 const CARROT_COUNT = 5;
@@ -13,7 +15,7 @@ let started = false;
 let score = 0;
 let timer = undefined;
 
-startBtn.addEventListener('click', () => {
+gameBtn.addEventListener('click', () => {
   if (started) {
     stopGame();
   } else {
@@ -29,12 +31,20 @@ function startGame() {
   startGameTimer();
 }
 
-function stopGame() {}
+function stopGame() {
+  stopGameTimer();
+  hideGameButton();
+  showPopUpWithText('REPLAY?');
+}
 
 function showStopButton() {
-  const icon = startBtn.querySelector('.fa-play');
+  const icon = gameBtn.querySelector('.fa-play');
   icon.classList.add('fa-stop');
   icon.classList.remove('fa-play');
+}
+
+function hideGameButton() {
+  gameBtn.style.visibility = 'hidden';
 }
 
 function showTimerAndScore() {
@@ -54,10 +64,19 @@ function startGameTimer() {
   }, 1000);
 }
 
+function stopGameTimer() {
+  clearInterval(timer);
+}
+
 function updateTimerText(time) {
   const minutes = Math.floor(time / 60);
   const seconds = time % 60;
   gameTimer.innerText = `${minutes}:${seconds}`;
+}
+
+function showPopUpWithText(text) {
+  popUpMsg.innerText = text;
+  popUp.classList.remove('pop-up--hide');
 }
 
 function initGame() {
