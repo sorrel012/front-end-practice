@@ -1,11 +1,10 @@
+'use strict';
+
 const field = document.querySelector('.game__field');
 const fieldRect = field.getBoundingClientRect();
 const gameBtn = document.querySelector('.game__button');
 const gameTimer = document.querySelector('.game__timer');
 const gameScore = document.querySelector('.game__score');
-const popUp = document.querySelector('.pop-up');
-const popUpMsg = document.querySelector('.pop-up__message');
-const popUpRefresh = document.querySelector('.pop-up__refresh');
 
 const CARROT_SIZE = 80;
 const CARROT_COUNT = 10;
