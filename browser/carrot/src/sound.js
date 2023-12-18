@@ -25,7 +25,7 @@ export function playBackground() {
 }
 
 export function StopBackground() {
-  playSound(bgSound);
+  stopSound(bgSound);
 }
 
 function playSound(sound) {
