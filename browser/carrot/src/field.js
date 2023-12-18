@@ -41,7 +41,7 @@ export default class Field {
     }
   }
 
-  onClick(evt) {
+  onClick = (evt) => {
     const target = evt.target;
     if (target.matches('.carrot')) {
       target.remove();
@@ -50,7 +50,7 @@ export default class Field {
     } else if (target.matches('.bug')) {
       this.onItemClick && this.onItemClick('bug');
     }
-  }
+  };
 }
 
 function randomNumber(min, max) {
