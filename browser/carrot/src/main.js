@@ -1,7 +1,7 @@
 'use strict';
 
 import PopUp from './popup.js';
-import { GameBuilder } from './game';
+import { GameBuilder } from './game.js';
 
 const CARROT_COUNT = 10;
 const BUG_COUNT = 10;
