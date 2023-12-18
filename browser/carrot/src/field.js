@@ -1,6 +1,6 @@
 'use strict';
 
-import * as sound from './sound';
+import * as sound from './sound.js';
 
 const CARROT_SIZE = 80;
 

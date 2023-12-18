@@ -2,7 +2,7 @@
 
 import PopUp from './popup.js';
 import Field from './field.js';
-import * as sound from './sound';
+import * as sound from './sound.js';
 
 const gameBtn = document.querySelector('.game__button');
 const gameTimer = document.querySelector('.game__timer');
