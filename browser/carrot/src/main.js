@@ -2,6 +2,7 @@
 
 import PopUp from './popup.js';
 import { GameBuilder, Reason } from './game.js';
+import * as sound from './sound';
 
 const CARROT_COUNT = 10;
 const BUG_COUNT = 10;
@@ -15,12 +16,15 @@ game.setGameStopListener((reason) => {
   switch (reason) {
     case Reason.cancel:
       message = 'Replay❔';
+      sound.playAlert();
       break;
     case Reason.win:
       message = 'YOU WON🎉';
+      sound.playWin();
       break;
     case Reason.lose:
       message = 'YOU LOST🚫';
+      sound.playBug();
       break;
     default:
       throw new Error('not valid reason');
