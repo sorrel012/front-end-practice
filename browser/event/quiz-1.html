@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quiz 1</title>
+    <style>
+      .box {
+        background-color: #730000;
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Let's dance</button>
+    <div class="box"></div>
+    <script>
+      const button = document.querySelector('button');
+      const box = document.querySelector('.box');
+      button.addEventListener('click', () => {
+        box.style.transition = 'transform 1s ease-in';
+        box.style.transform = 'translateX(800px)';
+        box.style.transform = 'translateX(500px)';
+      });
+    </script>
+  </body>
+</html>
