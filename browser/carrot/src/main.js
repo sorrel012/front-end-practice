@@ -1,7 +1,7 @@
 'use strict';
 
 import PopUp from './popup.js';
-import { GameBuilder } from './game.js';
+import { GameBuilder, Reason } from './game.js';
 
 const CARROT_COUNT = 10;
 const BUG_COUNT = 10;
@@ -13,13 +13,13 @@ const game = new GameBuilder().gameDuration(GAME_DURATION_SEC).carrotCount(CARRO
 game.setGameStopListener((reason) => {
   let message;
   switch (reason) {
-    case 'cancel':
+    case Reason.cancel:
       message = 'Replay❔';
       break;
-    case 'win':
+    case Reason.win:
       message = 'YOU WON🎉';
       break;
-    case 'lose':
+    case Reason.lose:
       message = 'YOU LOST🚫';
       break;
     default:
