@@ -13,7 +13,7 @@ const game = new GameBuilder().gameDuration(GAME_DURATION_SEC).carrotCount(CARRO
 game.setGameStopListener((reason) => {
   let message;
   switch (reason) {
-    case 'cancle':
+    case 'cancel':
       message = 'Replay❔';
       break;
     case 'win':

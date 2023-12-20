@@ -69,7 +69,7 @@ class Game {
     this.hideGameButton();
     sound.playAlert();
     sound.StopBackground();
-    this.onGameStop && this.onGameStop('cancle');
+    this.onGameStop && this.onGameStop('cancel');
   }
 
   finish(win) {
